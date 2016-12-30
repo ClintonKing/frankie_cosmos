@@ -1,0 +1,34 @@
+svg{
+  margin: 0;
+  padding: 40px;
+}
+
+body{
+  background-color:#FFD4DA;
+}
+
+.axis path{
+  fill: none;
+  stroke-width: 1;
+  stroke: #fff;
+}
+
+.axis .tick text{
+  fill: #fff;
+  font-family: sans-serif;
+}
+
+.yearBar{
+  fill: #CCFFCC;
+
+}
+
+.yearBar:hover{
+  fill: #CCFFCC;
+}
+
+.barText{
+  display: none;
+  text-align: center;
+  fill: #fff !important;
+}
