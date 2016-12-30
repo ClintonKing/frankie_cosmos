@@ -1,10 +1,30 @@
-svg{
-  margin: 0;
-  padding: 40px;
+@font-face{
+  font-family: markerFont;
+  src: url(fonts/Marker-Regular.otf);
+}
+
+@font-face{
+  font-family: markerNumbers;
+  src: url(fonts/Marker_numbers.ttf);
 }
 
 body{
   background-color:#FFD4DA;
+}
+
+#title{
+  font-size: 4em;
+  color: #fff;
+  text-align: center;
+  font-family: markerFont;
+}
+
+
+/*D3 STYLES*/
+
+svg{
+  margin: 0;
+  padding: 40px;
 }
 
 .axis path{
@@ -15,7 +35,8 @@ body{
 
 .axis .tick text{
   fill: #fff;
-  font-family: sans-serif;
+  font-family: markerNumbers;
+  font-size: 1.2em;
 }
 
 .yearBar{
@@ -31,4 +52,6 @@ body{
   display: none;
   text-align: center;
   fill: #fff !important;
+  font-size: 1.2em !important;
+  font-family: markerNumbers !important;
 }

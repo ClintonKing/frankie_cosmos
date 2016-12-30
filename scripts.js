@@ -163,9 +163,9 @@ d3.json('albums.json', function(err,data){
       .attr("class", "barText")
       .attr("id", function(d){return "text" + d.year})
       .text(function(d){return d.albums.toFixed(0)})
-      .style("fill", "black")
+      .style("fill", "white")
       .style("font-family", "sans-serif")
-      .style("font-size", "14px");
+      .style("font-size", "16px");
 
     //Let's make info for a specific bar appear on hovering on that bar.
     $(".shape").mouseenter(function(){
@@ -176,6 +176,6 @@ d3.json('albums.json', function(err,data){
       var num = this.id;
       $("#text" + num).hide();
     });
-    
+
 
 });
